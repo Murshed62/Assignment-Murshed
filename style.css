@@ -57,6 +57,7 @@ p,a{
     color: #fff;
     font-size: 16px;
     margin-top:30px ;
+    cursor: pointer;
 }
 
 .flex-image{
@@ -69,7 +70,7 @@ p,a{
 
 
 .about{
-    width: 96%;
+    width: 100%;
     height: 100vh;
     background: url('Assets/7.png') no-repeat content-box;
     background-size: contain;
@@ -112,11 +113,16 @@ p,a{
     padding: 16px 32px;
     border-radius: 28px;
     border: none;
+    cursor: pointer;
     background: linear-gradient(to right,#e67e22,#e2470a);
     color: #fff;
     font-size: 16px;
     margin-top:30px ;
 
+}
+ button:hover{
+    background: linear-gradient(to right,#e2470a,#e67e22);
+    transition: .5s;
 }
 
 .mycooking{
@@ -135,23 +141,25 @@ p,a{
     margin: auto;
 }
 .mycooking .food{
-    width: 90%;
-    margin: 30px 0;
+    width: 80%;
     margin: auto;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    border-radius: 5px;
+    align-items: flex-start;
+    
 
 }
 .food .food_box{
-    flex-basis: 20%;
-    box-shadow: 8px 8px 5px #aaaaaa;
+    flex-basis: 25%;
+    box-shadow: 7px 7px 7px 7px #aaaaaa;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: -80px;
     
 }
 .food_box h3,p{
-    width:100%;
+    width:90%;
     text-align:left;
     margin: 10px 0;
 }
@@ -163,10 +171,44 @@ p,a{
     width: 100%;
 }
 
+
+/* Followers*/
+
+.followers{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    box-shadow:8px 8px 10px 10px #aaaaaa;
+    padding: 10px;
+    justify-content: flex-end;
+    
+}
+
+.fllower{
+    flex-basis: 30%;
+    
+    
+
+}
+.fllower h2{
+    font-family:"Oswald",sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(5, 0, 0, 0.849);
+
+}
+.fllower p{
+    font-family: 'noto sans',sans-serif;
+    color: rgba(7, 6, 6, 0.972);
+}
+
 footer{
     width: 100%;
-    height: 20vh;
-    background: rgba(5, 1, 1, 0.753);
+    height: 30vh;
+    background: rgba(3, 0, 0, 0.877);
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,5 +221,6 @@ footer span{
 }
 footer p{
     text-align: center;
+    color: #fff;
 }
 
